@@ -14,7 +14,7 @@ myFormats = [
     ('Fichier STL','*.stl'),   
     ]
 myFormatsinput = [
-    ('Fichier BMP','*.*'),   
+    ('Fichier image BMP','.bmp'), ('Fichier image JPG','.jpg'), ('Fichier image PNG','.png')
     ]
 def Ouvrir():
 	file_path = tkinter.filedialog.askopenfilename(filetypes=myFormatsinput )

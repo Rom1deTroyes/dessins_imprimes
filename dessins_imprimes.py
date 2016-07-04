@@ -7,8 +7,17 @@
 # Licence GNU-GPL
 # Julien RAT pour les Petits Debrouillards et les amis
 
-from tkinter import *
+
+# tkinter change it's name in Python3
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter 
+except ImportError:
+    # for Python3
+    from tkinter import *   ## notice here too
+
 import tkinter.filedialog
+
 import subprocess
 myFormats = [
     ('Fichier STL','*.stl'),   
